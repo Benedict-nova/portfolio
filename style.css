@@ -227,6 +227,41 @@ span{
     line-height: 1.7;
     margin: auto;
 }
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 5rem;
+}
+.pro-img{
+    height: 15rem;
+    border-radius: 50%;
+    padding: 0 3rem;
+}
+.project-box{
+    background-color: var(--main-color);
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.project-box:hover{
+    background: white;
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+.btnn{
+    background: black;
+    padding: 3rem 0;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 1.5rem;
+   
+}
 .contact h2{
     margin-bottom: 3rem;
     color: white;
@@ -323,6 +358,11 @@ span{
         font-size: 55%;
     }
     .services-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
+     .project-container{
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
